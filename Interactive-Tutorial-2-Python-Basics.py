@@ -27,14 +27,16 @@ start_recording()
 #
 # Hint: It's rice and beans. Yum, string beans.
 
-favorite_food = 'Rice and beans' # Your answer here
+favorite_food = 'Rice and beans'
+# Your answer here
 
 print(favorite_food)
 
 # TODO 2: Calculate the volume of a 7 x 7 x 5 cube using Python math
 # operations.
 
-volume = 5*7*7 # Your answer here
+volume = 5*7*7
+# Your answer here
 
 print(volume)
 
@@ -56,8 +58,8 @@ print(hydraulic_processes)
 # TODO 4: Change the value of the second entry in this dict to 'bacon'.
 # Don't change the original dict.
 
-analogy = {'knowledge' : 'power', 'France': 'ham'}
-
+analogy = {'knowledge': 'power', 'France': 'ham'}
+analogy['France'] = 'bacon'
 # Your answer here
 
 print(analogy['knowledge'] + ' ' + analogy['France'])
@@ -75,9 +77,10 @@ a = True and False or not False or False
 b = True and not False or True and False
 c = False or not False and True or True
 
-does_it_work = 'maybe'
-
-# Your answer here
+if((a or b) and not c):
+    does_it_work = 'yes'
+else:
+    does_it_work = 'no'
 
 print(does_it_work)
 
@@ -89,7 +92,8 @@ print(does_it_work)
 
 x = 1
 
-# Your answer here
+for i in range(1, 30):
+    x *= i
 
 print(x)
 
@@ -101,7 +105,13 @@ print(x)
 
 x = 4
 
-# Your answer here
+
+def exp(number):
+    return number **2
+
+
+for i in range(6):
+    x = exp(x)
 
 print(x)
 
